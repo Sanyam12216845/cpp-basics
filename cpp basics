@@ -1,0 +1,96 @@
+#include<iostream>
+using namespace std;
+int b=15; //global variable
+static int d= 20;
+
+int main()
+
+{
+	int a=10;           // local variable
+	static int c=5;
+	const int e=30;     //constant keyword
+
+	cout << a << endl;
+	cout << b << endl;
+	cout << c << endl;
+	cout << d << endl;
+	cout << e << endl;
+	
+	
+// if statements	
+	int x=50;
+	int y=100;
+	if( y > x){
+	cout<<"y is greater than x" << y << endl;
+		
+	}
+	int atm;
+	cout<<"Enter your atm pin : "<<endl;
+	cin>>atm;
+	if(atm==1234){
+	cout<<"You can carry on the process :"<<endl;
+	}
+	
+// if - else statement
+	int p;
+	int q;
+	int max;
+	cout<<"enter two numbers :"<<endl;
+	cin>>p>>q;
+	if(p>q){
+	cout<<"P is greater than q :"<<p <<endl;
+		
+	}	
+	else{
+	cout<<"Q is greater than p : "<<q<<endl;
+		
+	}
+// Ternary operator
+//	max=(p>q )? p:q;
+//	cout<<"Ternary used for if else loop: "<<max;
+	int r;
+	int s;
+	int ch;
+	int add,sub,multi,div;
+	cout<<"Enter the values of two numbers : "<<endl;
+	cin>>r>>s;
+	cout<<"Enter your choice:"<<endl;
+	cin>>ch;
+	if(ch==1){
+		add=r+s;
+		cout<<add<<endl;
+		
+	}
+	else if(ch==2){
+		sub=r-s;
+		cout<<sub<<endl;
+		
+	}
+	else if(ch==3){
+		multi=r*s;
+		cout<<multi<<endl;
+		
+	}
+	else if(ch==4){
+		div=r/b;
+		cout<<div;
+	}
+	else{
+		cout<<"Invalid choice ! Please select again :"<<endl;
+	}
+	int i,j,k;
+	cout<<"Enter the three numbers of your choice :"<<endl;
+	cin>>i>>j>>k;
+	if(i>j){
+		if(i>k){
+			cout<<"I is greater than j and k:"<<i<<endl;
+			
+		}
+	}
+	else {
+		cout<<"I is not greater:"<<endl;
+	}
+		
+	
+	return 0;
+}
